@@ -11,7 +11,7 @@ function HeaderOptions({title, Icon, avatar, }) {
         className="headerOptions__avatar" src=""
         />
       )}
-       <h3 className='HeaderOptions__title'>{title}</h3>
+       <h5 className='HeaderOptions__title'>{title}</h5>
     </div>
   )
 }
