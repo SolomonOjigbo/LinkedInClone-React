@@ -1,7 +1,7 @@
 import React from 'react'
 import {Search} from '@mui/icons-material'
 import LinkedInImg from '../images/linkedin.svg'
-import './Header.css';
+import './styles/Header.css';
 import HeaderOptions from './HeaderOptions';
 import HomeIcon from '@mui/icons-material/Home';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
