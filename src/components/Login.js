@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./styles/Login.css";
 import LinkedInLogo from "../images/Linkedin-Logo.png"
 import { auth } from "./firebase";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { selectUser } from "../features/userSlice";
 
 
 
@@ -12,6 +13,7 @@ function Login({ login }) {
   const [profile, setProfile] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const user = useSelector(selectUser)
 
   const dispatch = useDispatch();
 
@@ -32,7 +34,7 @@ function Login({ login }) {
 
   const register = (e) => {
     e.preventDefault();
-    if (!name || !email) {
+    if (!name) {
       return alert("Please enter required fields");
     }
     auth
