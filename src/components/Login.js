@@ -101,7 +101,7 @@ function Login({ login }) {
           Sign In
         </button>
         <p>
-          Not a member? <span onClick={register}>Register Now</span>
+          Not a member? <span><button onClick={register}>Register Now</button></span>
         </p>
       </form>
     </div>
